@@ -457,7 +457,6 @@ class _ServicesDeskState extends State<ServicesDesk> {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(8),
-                  primary: Colors.blue,
                   shape: CircleBorder(),
                 ),
                 child: Icon(

@@ -443,7 +443,6 @@ class _ClaimWidgetState extends State<ClaimWidget> {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(8),
-                  primary: Colors.blue,
                   shape: CircleBorder(),
                 ),
                 child: Icon(

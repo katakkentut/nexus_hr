@@ -1227,7 +1227,6 @@ class _EducationBackgroundWidgetState extends State<EducationBackgroundWidget> {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.all(8),
-                  primary: Colors.blue,
                   shape: CircleBorder(),
                 ),
                 child: Icon(
