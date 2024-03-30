@@ -14,6 +14,7 @@ import 'package:nexus_hr/screens/auth/signin.dart';
 import 'package:nexus_hr/screens/claimspage.dart';
 import 'package:nexus_hr/screens/leavespage.dart';
 import 'package:nexus_hr/screens/memopage.dart';
+import 'package:nexus_hr/screens/payslippage.dart';
 import 'package:nexus_hr/screens/profilepage.dart';
 import 'package:http/http.dart' as http;
 import 'package:nexus_hr/screens/servicesdesk.dart';
@@ -332,33 +333,38 @@ class _HomepageWidgetState extends State<HomepageWidget>
                       ),
                     ),
                     SizedBox(width: 15),
-                    Column(
-                      children: [
-                        Align(
-                          alignment: AlignmentDirectional(0, -0.13),
-                          child: Container(
-                            width: 61,
-                            height: 68,
-                            decoration: BoxDecoration(
-                              color: HexColor('#9AD0D3'),
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(20),
-                                bottomRight: Radius.circular(20),
-                                topLeft: Radius.circular(20),
-                                topRight: Radius.circular(20),
+                    GestureDetector(
+                      onTap: () {
+                        Get.to(() => PaySlipWidget());
+                      },
+                      child: Column(
+                        children: [
+                          Align(
+                            alignment: AlignmentDirectional(0, -0.13),
+                            child: Container(
+                              width: 61,
+                              height: 68,
+                              decoration: BoxDecoration(
+                                color: HexColor('#9AD0D3'),
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(20),
+                                  bottomRight: Radius.circular(20),
+                                  topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(20),
+                                ),
                               ),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(-0.52, -0.18),
-                              child: Icon(
-                                Icons.monetization_on,
-                                size: 60,
+                              child: Align(
+                                alignment: AlignmentDirectional(-0.52, -0.18),
+                                child: Icon(
+                                  Icons.monetization_on,
+                                  size: 60,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                        Text('Pay Slip'),
-                      ],
+                          Text('Pay Slip'),
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -455,7 +461,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                                     ),
                                   ),
                                   Text(
-                                    'Late: $lateTime',
+                                    'Late: $lateTime hrs',
                                     style: GoogleFonts.roboto(
                                       color: Colors.red[900],
                                       fontSize: 16,
@@ -489,7 +495,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                                     ),
                                   ),
                                   Text(
-                                    'Overtime: $overTime hrs',
+                                    'OT: $overTime hrs',
                                     style: GoogleFonts.roboto(
                                       color: Colors.red[900],
                                       fontSize: 16,

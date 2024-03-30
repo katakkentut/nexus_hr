@@ -14,11 +14,14 @@ class _AuthEndPoints {
   final String userAddress = 'services/user-address';
   final String userContact = 'services/user-contact';
   final String userEducation = 'services/user-education';
-  final String serveEducationAttachment = 'services/serve-education-attachment/';
+  final String serveEducationAttachment =
+      'services/serve-education-attachment/';
   final String userClaim = 'services/user-claim';
   final String userLeave = 'services/user-leave';
   final String userServiceDesk = 'services/service-desk';
   final String userAttendance = 'services/user-attendance';
   final String userMemo = 'services/user-memo';
   final String resetPassword = 'services/reset-password';
+  final String userPaySlip = 'services/user-payslip';
+  final String servePayslip = 'services/serve-user-payslip/';
 }
