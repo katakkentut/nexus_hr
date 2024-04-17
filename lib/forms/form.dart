@@ -19,7 +19,7 @@ class FormWidget  {
         9,
       ),
       child: Container(
-        width: 370,
+        width: 900,
         child: Focus(
           child: IgnorePointer(
             ignoring: isDisabled,

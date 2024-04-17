@@ -51,7 +51,7 @@ class _SignInWidgetState extends State<SignInWidget> {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height ,
               child: Image.asset(
                 'assets/background/bg.png',
                 fit: BoxFit.cover,

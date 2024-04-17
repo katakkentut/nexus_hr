@@ -223,20 +223,21 @@ class _HomepageWidgetState extends State<HomepageWidget>
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height / 2 - 250,
-                left: MediaQuery.of(context).size.width / 2 - 60,
+                top: MediaQuery.of(context).size.height / 2 - 350,
+                left: MediaQuery.of(context).size.width / 2 - 90,
                 child: FadeTransition(
                   opacity: _controller!,
                   child: CircleAvatar(
-                    radius: 60,
+                    radius: 100,
                     backgroundImage: NetworkImage(userFullName.isEmpty
                         ? 'https://via.placeholder.com/150'
                         : profilePhoto),
+                        
                   ),
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height / 2 + -120,
+                top: MediaQuery.of(context).size.height / 2 + -40,
                 width: MediaQuery.of(context).size.width,
                 child: Text(
                   userFullName,
@@ -249,7 +250,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height / 2 + -85,
+                top: MediaQuery.of(context).size.height / 2 + -10,
                 width: MediaQuery.of(context).size.width,
                 child: Text(
                   'HR Nexus System',
@@ -262,7 +263,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 380, 0, 0),
+                padding: EdgeInsets.fromLTRB(0, 500, 0, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -371,15 +372,14 @@ class _HomepageWidgetState extends State<HomepageWidget>
                 ),
               ),
               Positioned(
-                top: 160,
-                bottom: 50,
+                top: 700,
                 left: 50,
                 right: 50,
                 child: Align(
                   alignment: AlignmentDirectional(0.01, 0.64),
                   child: Container(
-                    width: 312,
-                    height: 250,
+                    width: 400,
+                    height: 300,
                     decoration: BoxDecoration(
                       color: HexColor('#9AD0D3'),
                       borderRadius: BorderRadius.only(
@@ -432,7 +432,7 @@ class _HomepageWidgetState extends State<HomepageWidget>
                               )),
                         ),
                         Padding(
-                          padding: EdgeInsets.fromLTRB(35.0, 80.0, 35.0, 70.0),
+                          padding: EdgeInsets.fromLTRB(60.0, 100.0, 60.0, 60.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [

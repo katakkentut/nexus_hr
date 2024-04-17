@@ -849,7 +849,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                   'Relationship',
                   relationshipController,
                   relationshipFocusNode,
-                  TextInputType.number,
+                  TextInputType.text,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Please enter your relationship';
