@@ -149,7 +149,8 @@ class _HomepageWidgetState extends State<HomepageWidget>
           profilePhoto =
               // ignore: prefer_interpolation_to_compose_strings
               "${ApiEndPoints.baseUrl}${ApiEndPoints.authEndpoints.userProfile}/" +
-                  responseData['userProfile'];
+                  responseData['userReference'];
+
         });
       } else {
         print('Error: ${response.statusCode}');

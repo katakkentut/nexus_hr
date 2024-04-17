@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 class ApiEndPoints {
-  static const String baseUrl = 'https://nqp82lpb-5050.asse.devtunnels.ms/';
+  static const String baseUrl = 'https://nqp82lpb-5051.asse.devtunnels.ms/';
 
   static _AuthEndPoints authEndpoints = _AuthEndPoints();
 }
